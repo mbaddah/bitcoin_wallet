@@ -10,8 +10,6 @@ def create_wallet(wallet_name):
     # Generate a new mnemonic
     mnemonic = mnemonic_instance.generate()
 
-    wallet_name = 'my_wallet_04'
-
     # Create a new wallet from the mnemonic
     wallet = Wallet.create(wallet_name, witness_type='segwit', keys=mnemonic, network='testnet')
 
@@ -68,10 +66,10 @@ def delete_all_wallets():
         wallet_delete(wallet_name['id'])
     print("All wallets deleted")
 
-wallet_name = 'my_wallet'
+wallet_name = input("Enter wallet name:")
 create_wallet(wallet_name)
 load_wallet(wallet_name)
 list_wallets()
-delete_wallet('my_wallet')
+delete_wallet(wallet_name)
 # delete_all_wallets()
 list_wallets()
