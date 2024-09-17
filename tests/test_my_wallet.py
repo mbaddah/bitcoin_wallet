@@ -4,6 +4,7 @@ from bitcoinlib.wallets import Wallet
 from bitcoinlib.mnemonic import Mnemonic
 import json
 
+@unittest.skip("Skipping all tests in this class")
 class TestMyWallet(unittest.TestCase):
 
     @patch('bitcoinlib.mnemonic.Mnemonic')

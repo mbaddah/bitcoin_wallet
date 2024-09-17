@@ -5,7 +5,7 @@ Bitcoin wallet implementation using bitcoinlib.
 - Run `bitcoin_wallet.py` and enter wallet name.
 
 ## Test
-- Run unit tests using `pytest` (or `python -m pytest`)
+- Run unit tests using `pytest -s` (or `python -m pytest -s`)
 - Run with `--cov=bitcoin_wallet` to run with coverage
 
 ## References
